@@ -15,7 +15,7 @@ This project is a currency converter application built using React and Vite. It 
 
 1. **Clone the repository:**
    ```bash 
-    - git clone https://github.com/Tugrul99/Currency.git
+    - git clone [https://github.com/Tugrul99/Currency.git](https://github.com/Tugrul99/55792_56866_54740_56367_54743.git)
 2. **Navigate to the project directory:**
    ```bash
    - cd Currency
