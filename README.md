@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a currency converter application built using React. It integrates with a currency exchange API to fetch real-time exchange rates and allows users to convert between different currencies.
+This project is a currency converter application built using React and Vite. It integrates with a currency exchange API to fetch real-time exchange rates and allows users to convert between different currencies.
 
 ## Features
 
@@ -11,13 +11,23 @@ This project is a currency converter application built using React. It integrate
 - Simple and intuitive UI with dropdowns for currency selection
 - Error handling for API requests and user input
 
-## Project Structure
+## Installation
 
-```plaintext
-src/
-|-- components/
-|   |-- Dropdown.js
-|-- App.js
-|-- CurrencyConverter.js
-|-- index.js
-|-- App.css
+1. **Clone the repository:**
+   ```bash
+  - git clone https://github.com/Tugrul99/Currency.git
+2. **Navigate to the project directory:**
+   ```bash
+  - git clone https://github.com/Tugrul99/Currency.git
+3. **Install Vite:**
+   ```bash
+  - git clone https://github.com/Tugrul99/Currency.git
+4. **Install the dependencies:**
+   ```bash
+  - git clone https://github.com/Tugrul99/Currency.git
+  
+ ## Usage
+Start the development server:
+   ```bash
+npm run dev
+Open your browser and go to http://localhost:3000 to view the app.
