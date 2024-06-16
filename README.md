@@ -14,20 +14,24 @@ This project is a currency converter application built using React and Vite. It 
 ## Installation
 
 1. **Clone the repository:**
-   ```bash
-  - git clone https://github.com/Tugrul99/Currency.git
+   ```bash 
+    - git clone https://github.com/Tugrul99/Currency.git
 2. **Navigate to the project directory:**
-   ```bash- git clone https://github.com/Tugrul99/Currency.git
+   ```bash
+   - cd Currency
   
 3. **Install Vite:**
    ```bash
-  - git clone https://github.com/Tugrul99/Currency.git
+    - npm install vite
 4. **Install the dependencies:**
    ```bash
-  - git clone https://github.com/Tugrul99/Currency.git
+    - npm install
   
  ## Usage
-Start the development server:
+  ## Start the development server: 
+<br>
+<br>
+
    ```bash
-npm run dev
-Open your browser and go to http://localhost:3000 to view the app.
+    - npm run dev
+    - Open your browser and go to http://localhost:3000 to view the app.
