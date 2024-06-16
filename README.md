@@ -35,3 +35,6 @@ This project is a currency converter application built using React and Vite. It 
    ```bash
     - npm run dev
     - Open your browser and go to http://localhost:3000 to view the app.
+
+### Presentation
+![screenshot](workflow.png)
