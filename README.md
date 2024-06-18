@@ -22,7 +22,7 @@ This project is a currency converter application built using React and Vite. It 
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd Currency
+   cd 55792_56866_54740_56367_54743
    ```
 3. **Install Vite:**
    ```bash
