@@ -45,3 +45,27 @@ Follow these steps to run the project locally:
 
 ## Project Structure
 The project files and directory structure are as follows:
+55792_56367/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── assets/
+│ │ ├── Dropdown.jsx
+│ │ └── ...
+│ ├── tests/
+│ │ ├── CurrencyConverter.test.js
+│ │ └── Dropdown.test.js
+│ ├── CurrencyConverter.jsx
+│ └── ...
+├── package.json
+└── README.md
+
+## Key Components and Their Functions
+- **CurrencyConverter.jsx:** Manages the currency conversion logic and user interface.
+- **Dropdown.jsx:** Component used for selecting currencies via dropdown menus.
+
+## Testing Instructions
+To run the tests, use the following command:
+```bash
+npm test
