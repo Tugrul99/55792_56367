@@ -70,4 +70,4 @@ The project files and directory structure are as follows:
 To run the tests, use the following command:
 ```bash
 npm test
->>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
+
