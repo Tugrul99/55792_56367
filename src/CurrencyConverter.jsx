@@ -2,10 +2,24 @@ import React, { useEffect, useState } from "react";
 import Dropdown from "./assets/Dropdown";
 
 const CurrencyConverter = () => {
+<<<<<<< HEAD
   const [currencyList, setCurrencyList] = useState([]);
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("TRY");
+=======
+  // Our API from frankfurter.com -> https://api.frankfurter.app/currencies
+  // 31 currencies included
+
+  // Firstly, we have a state to contain currencies.
+  const [currencyList, setCurrencyList] = useState([]);
+  const [amount, setAmount] = useState(1);
+
+  // FROM AND TO STATE
+  const [fromCurrency, setFromCurrency] = useState(["USD"]);
+  const [toCurrency, setToCurrency] = useState(["TRY"]);
+
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [isConverting, setIsConverting] = useState(false);
 
@@ -13,7 +27,11 @@ const CurrencyConverter = () => {
     try {
       const res = await fetch("https://api.frankfurter.app/currencies");
       const data = await res.json();
+<<<<<<< HEAD
       setCurrencyList(Object.keys(data));
+=======
+      setCurrencyList(Object.keys(data)); // Changed setCurrencyList(data) because the data we are fetching is not an ARRAY, it's an OBJECT
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
     } catch (error) {
       console.error("Error fetching currencies", error);
     }
@@ -22,6 +40,10 @@ const CurrencyConverter = () => {
   useEffect(() => {
     fetchCurrencies();
   }, []);
+<<<<<<< HEAD
+=======
+  console.log(currencyList);
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
 
   const convertCurrency = async () => {
     if (!amount) return;
@@ -31,6 +53,10 @@ const CurrencyConverter = () => {
         `https://api.frankfurter.app/latest?amount=${amount}&from=${fromCurrency}&to=${toCurrency}`
       );
       const data = await res.json();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
       setConvertedAmount(data.rates[toCurrency] + " " + toCurrency);
     } catch (error) {
       console.error("Error fetching conversion rate", error);
@@ -42,18 +68,30 @@ const CurrencyConverter = () => {
   const swapCurrencies = () => {
     setFromCurrency(toCurrency);
     setToCurrency(fromCurrency);
+<<<<<<< HEAD
+=======
+    // WE SIMPLY SWAP CURRENCIES WITH THAT
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
   };
 
   return (
     <div className="max-w-xl mx-auto p-10 bg-white rounded-lg shadow-md">
       <h1 className="mb-10">Currency Converter</h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
+<<<<<<< HEAD
+=======
+        {/* Logic behind that first Dropdown is from and second one is To dropdown. */}
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
         <Dropdown
           currencyList={currencyList}
           label="From"
           selectedCurrency={fromCurrency}
           onCurrencyChange={setFromCurrency}
         />
+<<<<<<< HEAD
+=======
+        {/* WE LL AD  SWAP CURRENCY BUTTON */}
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
         <div>
           <button onClick={swapCurrencies}>⥃</button>
         </div>
@@ -73,7 +111,10 @@ const CurrencyConverter = () => {
           Amount:
         </label>
         <input
+<<<<<<< HEAD
           id="amount"
+=======
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           type="number"
@@ -90,10 +131,14 @@ const CurrencyConverter = () => {
           </button>
         </div>
         {convertedAmount && (
+<<<<<<< HEAD
           <div
             data-testid="converted-amount"  // Bu satırı ekleyin
             className="mt-4 text-lg font-medium text-right text-blue"
           >
+=======
+          <div className="mt-4 text-lg font-medium text-right text-blue">
+>>>>>>> 554bbaeabd27892b5f4c16cab68b5b67950edcf8
             Converted Amount: {convertedAmount}
           </div>
         )}
